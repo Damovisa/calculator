@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/martin/calculator/_apis/build/status/martinwoodward.calculator)](https://dev.azure.com/martin/calculator/_build/latest?definitionId=34)
+
 Calculator.js: a node.js Demonstration Project
 ==============================================
 An example node.js project, including tests with mocha, that behaves like
