@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/martin/calculator/_apis/build/status/martinwoodward.calculator)](https://dev.azure.com/martin/calculator/_build/latest?definitionId=34)
+[![Build Status](https://dev.azure.com/martin/calculator/_apis/build/status/martinwoodward.calculator?label=Build)](https://dev.azure.com/martin/calculator/_build/latest?definitionId=34)
 
 Calculator.js: a node.js Demonstration Project
 ==============================================
