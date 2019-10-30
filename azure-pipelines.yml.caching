@@ -1,0 +1,27 @@
+# Build NodeJS with Ubuntu
+variables:
+  imageName: 'ubuntu-16.04'
+  cachekey : npmpackages | **/package-lock.json
+  cachepath : node_modules
+
+pool:
+  vmImage: $(imageName)
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- task: CacheBeta@0
+  inputs:
+    key: $(cachekey)
+    path: $(cachepath)
+
+- script: npm install --verbose
+  displayName: 'npm install --verbose'
+
+- script: |
+    npm run build --if-present
+    npm run test --if-present
+  displayName: 'npm build and test'
