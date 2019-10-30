@@ -1,6 +1,6 @@
 # Build NodeJS with Ubuntu
 variables:
-  imageName: 'ubuntu-latest'
+  imageName: 'ubuntu-16.04'
 
 pool:
   vmImage: $(imageName)
