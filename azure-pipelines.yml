@@ -5,7 +5,7 @@ variables:
 pool:
   vmImage: $(imageName)
 
-container: alpine:latest
+container: node:alpine
   
 steps:
 - task: NodeTool@0
