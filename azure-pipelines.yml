@@ -5,13 +5,16 @@ variables:
 pool:
   vmImage: $(imageName)
 
-container: node:10
-
 steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+
+- task: CacheBeta@0
+  inputs:
+    key: npmpackages | **/package-lock.json
+    path: modules
 
 - script: npm install --verbose
   displayName: 'npm install --verbose'
