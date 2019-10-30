@@ -5,6 +5,8 @@ variables:
 pool:
   vmImage: $(imageName)
 
+container: node:10-alpine
+
 steps:
 - task: NodeTool@0
   inputs:
