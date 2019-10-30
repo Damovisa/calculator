@@ -1,4 +1,4 @@
-# Build NodeJS with Matrix Strategy for operating systems
+# Build NodeJS with Ubuntu
 variables:
   imageName: 'ubuntu-latest'
 
